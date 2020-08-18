@@ -1,0 +1,165 @@
+.modal {
+}
+
+.modal.open .overlay,
+.modal.open .modal__window {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.modal__window,
+.overlay {
+  opacity: 0;
+  z-index: -10;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(6, 6, 6, 0.7);
+}
+
+.modal__window {
+  position: relative;
+  width: 716px;
+  background: #3b181e;
+}
+
+.modal__wrap {
+  display: flex;
+}
+
+.modal__forma {
+  margin: 0 auto;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.modal__forma-title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.modal__forma-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.modal__forma-input {
+  padding: 0 22px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgba(246, 246, 249, 0.2);
+  background-color: #3b181e;
+  color: #ffffff;
+  font-family: "Forum", cursive;
+  font-style: 14px;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+}
+
+.form-group_phone {
+  margin-bottom: 28px;
+}
+
+.modal__forma-button {
+  font-family: "Forum", cursive;
+  font-style: 11px;
+  line-height: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  
+  color: #010001;
+  background-color: #ffffff;
+
+  border: none;
+  padding: 17px 61px 17px 61px;
+  
+  cursor: pointer;
+}
+
+/* Adaptive design 
+ =========================================================================================*/
+
+/* Tablet
+ =========================================================================================*/
+@media (max-width: 1024px) {
+  .modal__window {
+    max-width: 464px;
+  }
+
+  .modal__window-image {
+    display: none;
+  }
+
+  .modal__forma {
+    padding-top: 104px;
+    padding-left: 46px;
+    padding-right: 46px;
+    width: 100%;
+  }
+
+  .modal__forma-title {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
+/* Smartphone
+=========================================================================================*/
+@media (max-width: 812px) {
+  .modal__window {
+    max-width: 288px;
+  }
+
+  .modal__forma {
+    padding-top: 62px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 52px;
+  }
+
+  .modal__forma-title {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  .modal__window {
+    height: 360px;
+  }
+
+  .modal__forma {
+    padding-bottom: 10px;
+  }
+
+  .modal__forma-title {
+    font-size: 18px;
+  }
+}

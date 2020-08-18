@@ -1,0 +1,246 @@
+.catalog__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.catalog__title {
+  position: relative;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title::after {
+  content: '';
+  width: 85.5px;
+  height: 0;
+  border: 1px solid #ffffff;
+  display: block;
+  margin-top: 12px;
+}
+
+.catalog__bg {
+  position: absolute;
+  font-size: 162px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.03;
+  width: 100%;
+  top: 67px;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  min-width: 330px;
+  height: 450px;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 3.6%;
+  cursor: pointer;
+}
+
+.card:hover::before {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  content: "";
+  display: block;
+  width: 350px;
+  height: 460px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover::after {
+  position: absolute;
+  content: "";
+  width: 330px;
+  height: 440px;
+  background: rgba(0, 0, 0, 0.6);
+  display: block;
+  top: 0;
+}
+
+.card__wrap {
+  padding: 36px 21px 20px 21px;
+  min-height: 440.2px;
+}
+
+.card__number {
+  margin-bottom: 276px;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  transform: translateY(60px);
+}
+
+.card:hover .card__text {
+  transform: translateY(-10px);
+}
+
+.card__button {
+  position: absolute;
+  z-index: 100;
+
+  display: none;
+
+  font-family: "Forum", cursive;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: #010001;
+  background-color: #ffffff;
+  padding: 19px 30px 16px 30px;
+  
+  cursor: pointer;
+}
+
+.card:hover .card__button {
+  display: block;
+}
+
+/* Background cards
+===================================================================================*/
+.bg-1 {
+  background-image: url(../../img/catalog/catalog-card1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-2 {
+  background-image: url(../../img/catalog/catalog-card2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-3 {
+  background-image: url(../../img/catalog/catalog-card3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-4 {
+  background-image: url(../../img/catalog/catalog-card4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel {
+  display: none;
+}
+
+/* Adaptive design 
+ ==============================================================================*/
+
+ /* Tablet
+ ==============================================================================*/
+@media (max-width: 1024px) {
+ .catalog__bg {
+   font-size: 110px;
+   top: 100px;
+ }
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    margin-bottom: 100px;
+  }
+
+  .catalog__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 170%;
+  }
+
+  .catalog__title {
+    margin-bottom: 20px;
+  }
+
+  .catalog__bg {
+    display: none;
+  }
+
+  .cards-wrapper {
+    display: none;
+  }
+ 
+  .carousel {
+    display: block;
+  }
+
+  .card {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .card:hover::before {
+    display: none;
+  }
+}
+
+/* Smartphone
+===============================================================================*/
+@media (max-width: 414px) {
+  .card {
+    min-width: 288px;
+    height: 392px;
+  }
+
+  .card__wrap {
+    padding: 23px 20px 15px 20px;
+    min-height: 392px;
+  }
+
+  .card:hover::before {
+    display: none;
+  }
+
+  .card:hover::after {
+    width: 288px;
+  }
+
+  .card__number {
+    margin-bottom: 260px;
+  }
+
+  .card__text {
+    margin-bottom: 0;
+    transform: translateY(40px);
+  }
+
+  .card:hover .card__text {
+    transform: translateY(-10px);
+  }
+}

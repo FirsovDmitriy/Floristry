@@ -1,0 +1,317 @@
+.header {
+  position: relative;
+
+  background-image: url("../../img/header/header-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  margin-bottom: 163px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.logo__image {
+  background-image: url(../../img/logo.png);
+  background-position: center;
+  background-size: cover;
+
+  width: 137px;
+  height: 47px;
+}
+
+.header__body {
+  display: block;
+}
+
+.social-menu {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 2.5%;
+  z-index: 40;
+}
+
+.social-menu__list {
+  margin-left: 1rem;
+  margin-bottom: 97px;
+}
+
+.social-menu__item {
+  margin-bottom: 25px;
+}
+
+.social-menu__item:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.header__body-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 230px;
+}
+
+.header-title {
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 132px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  margin-bottom: 88px;
+}
+
+.header-button {
+  font-family: "Forum", cursive;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  border: 1px solid #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 19px 30px 19px 30px;
+
+  color: #ffffff;
+}
+
+.header-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.header__mouse {
+  position: absolute;
+  bottom: 97px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.header__mouse-image {
+  cursor: pointer;
+}
+
+.header__arrow {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 2.5%;
+}
+
+.header__arrow-icon {
+  margin-right: 1rem;
+  margin-bottom: 112px;
+}
+
+.header__gradient {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(0deg, #3b181e 3.33%, rgba(59, 24, 30, 0) 100%);
+}
+
+.tablet-header {
+  display: none;
+}
+
+.smartphone-header {
+  display: none;
+}
+
+/* Adaptive design 
+ ==============================================================================*/
+
+ /* Laptop
+ ==============================================================================*/
+ @media (max-width: 1440px) {
+   .header__body-content {
+     margin-top: 10%;
+   }
+
+   .header-title {
+     font-size: 80px;
+     line-height: 84px;
+     margin-bottom: 50px;
+   }
+
+   .social-menu__list {
+     margin-bottom: 66px;
+   }
+
+   .header__mouse {
+     bottom: 66px;
+   }
+
+   .header__arrow-icon {
+     margin-bottom: 81px;
+   }
+
+   .header__gradient {
+     height: 44px;
+   }
+ }
+
+/*  Tablet
+===============================================================================*/
+@media (max-width: 1024px) {
+  .header {
+    background-image: url(../../img/header/header-bg-tablet.png);
+    margin-bottom: 100px;
+    height: 100%;
+  }
+
+  .header-top {
+    padding-top: 38px;
+    margin-bottom: 246px;
+  }
+
+  .header__body {
+    display: none;
+  }
+
+  .tablet-header {
+    display: block;
+  }
+
+  .tablet-header__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-title {
+    font-size: 70px;
+    line-height: 77px;
+
+    padding-top: 0;
+    margin-bottom: 82px;
+  }
+
+  .header-button {
+    margin-bottom: 211px;
+  }
+
+  .mobile-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .mobile__social-menu {
+    display: flex;
+  }
+
+  .mobile__social-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54.93px;
+    height: 54.93px;
+    margin-right: 80px;
+    border-radius: 50%;
+    background-color: #3b181e;
+  }
+
+  .mobile__social-circle:last-child {
+    margin-right: 0;
+  }
+
+  .mobile__social-icon {
+    width: 28.25px;
+    height: 28.25px;
+  }
+
+  .tablet-header__arrow {
+    margin-bottom: 54.79px;
+  }
+
+  .header__gradient {
+    display: none;
+  }
+
+}
+
+/* Smartphone
+=============================================================================================*/
+@media (max-width: 767px) {
+  .header {
+    background: none;
+  }
+
+  .header-top {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .logo__image {
+    width: 96px;
+    height: 29px;
+  }
+
+  .tablet-header {
+    display: none;
+  }
+
+  .smartphone-header {
+    background-image: url(../../img/header/header-bg-smartphone.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: block;
+  }
+
+  .smartphone-header__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-title {
+    font-size: 30px;
+    line-height: 140%;
+
+    padding-top: 103px;
+    margin-bottom: 35px;
+  }
+
+  .header-button {
+    margin-bottom: 70px;
+  }
+
+  .mobile-social {
+    margin-bottom: 30px;
+  }
+
+  .mobile__social-circle {
+    width: 35px;
+    height: 35px;
+    margin-right: 40px;
+  }
+
+  .mobile__social-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .smartphone-header__arrow {
+    margin-bottom: 40.1px;
+  }
+}

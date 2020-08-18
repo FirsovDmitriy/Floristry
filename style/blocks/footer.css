@@ -1,0 +1,96 @@
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-tablet {
+  display: none;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu__list {
+  display: flex;
+  margin-top: 21px;
+  margin-bottom: 30px;
+}
+
+.footer-menu__item {
+  margin-right: 50px;
+  list-style: none;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-menu__link:hover {
+  color: #ffffff;
+}
+
+.footer-social-menu {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-social-menu__item {
+  margin-right: 50px;
+}
+
+.footer-social-menu__item:nth-child(4) {
+  margin-right: 0;
+}
+
+/* Adaptive design
+======================================================================================*/
+
+/* Tablet
+======================================================================================*/
+@media (max-width: 1024px) {
+  .footer-tablet {
+    display: block;
+  }
+
+  .footer-tablet {
+    margin-top: 64px;
+  }
+
+  .footer-menu__item {
+    margin-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .footer-menu__item {
+    margin-right: 15px;
+  }
+}
+
+/* Smaptphone
+=================================================================================*/
+@media (max-width: 812px) {
+  .footer-menu__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-menu__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer-tablet {
+    margin-top: 45px;
+  }
+
+  .footer-tablet {
+    display: block;
+  }
+}

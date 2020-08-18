@@ -1,0 +1,85 @@
+.offers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 170px;
+  padding-bottom: 200px;
+}
+
+.offers__text {
+  line-height: 170%;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.offers__button {
+  font-family: "Forum", cursive;
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #010001;
+  border: none;
+  padding: 17px 30px 15px 30px;
+  text-transform: uppercase;
+}
+
+.offers__button:hover {
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Adaptive design 
+ ==============================================================================*/
+
+/* Tablet
+ ==============================================================================*/
+@media (max-width: 1024px) {
+  .offers {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .offers__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offers__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .offers__image {
+    order: -1;
+    margin-bottom: 30px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Smartphone
+===================================================================================*/
+@media (max-width: 420px) {
+  .offers__image {
+    display: block;
+    order: -1;
+    margin-bottom: 25px;
+  }
+
+  .offers__content {
+    align-items: flex-start;
+  }
+
+  .offers__title {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
