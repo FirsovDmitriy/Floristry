@@ -9,3 +9,7 @@
 
 @import url("blocks/slick.css");
 @import url("blocks/slick-theme.css");
+
+@import url("blocks/background.css");
+@import url("blocks/info.css");
+@import url("blocks/instagram.css");

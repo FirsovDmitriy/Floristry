@@ -98,10 +98,15 @@
 {
     pointer-events: none;
 }
-.slick-initialized .slick-slide
+.regular.slick-initialized .slick-slide
 {
     display: flex;
-    justify-content: center;
+   justify-content: center;
+}
+.center.slick-initialized .slick-slide
+{
+    display: flex;
+    justify-content: flex-start;
 }
 .slick-loading .slick-slide
 {

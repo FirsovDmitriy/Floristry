@@ -2,7 +2,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-tablet {
+.footer-mobile {
   display: none;
 }
 
@@ -52,7 +52,7 @@
 /* Tablet
 ======================================================================================*/
 @media (max-width: 1024px) {
-  .footer-tablet {
+  .footer-mobile {
     display: block;
   }
 
@@ -65,7 +65,7 @@
   }
 }
 
-@media only screen and (max-width: 834px) {
+@media (max-width: 834px) {
   .footer-menu__item {
     margin-right: 15px;
   }
