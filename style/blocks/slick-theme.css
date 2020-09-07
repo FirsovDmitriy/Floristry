@@ -1,11 +1,47 @@
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    /*width: 20px;
+    height: 20px;*/
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-next
+{
+    right: -10px;
+    background-image: url(../../img/slick-slider-arrow.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+
 /* Dots */
-.slick-dots {
+.regular .slick-dots {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slick-dots li button {
+.regular .slick-dots li button {
     font-size: 0;
     width: 62.61px;
     height: 3px;
@@ -14,6 +50,6 @@
     margin: 0 5px;
 }
 
-.slick-dots li.slick-active button {
+.regular .slick-dots li.slick-active button {
     background: #ffffff;
 }

@@ -16,19 +16,6 @@ burgerIconButton.addEventListener("click", function () {
 });
 
 
-// Modal window
-offersButton.addEventListener("click", function () {
-  
-  modal.classList.add("open");
-
-});
-
-modalClose.addEventListener("click", function () {
-  
-  modal.classList.remove("open");
-
-});
-
 // Click slider
 $(document).ready(function() {
   
@@ -54,6 +41,50 @@ $(document).ready(function() {
 
   });
   
+
+  $(".center").slick({
+    infinite: true,
+    
+    slidesToShow: 4,
+    slidesToScroll: 1,
+
+    responsive: [
+
+      {
+        breakpoint: 1025,
+        settings: {
+          arrows: false,
+        }
+      },
+
+      
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+        }
+      }
+      
+      
+    ]
+
+  });
+  
+
+});
+
+
+// Modal window
+offersButton.addEventListener("click", function () {
+  
+  modal.classList.add("open");
+
+});
+
+modalClose.addEventListener("click", function () {
+  
+  modal.classList.remove("open");
 
 });
 

@@ -1,0 +1,98 @@
+.wedding-design-bg {
+  background-image: url(../../img/wedding-design/wedding-design-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.event-bouquets-bg {
+  background-image: url(../../img/event-bouquets/event-bouquets-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.compositions-bg {
+  background-image: url(../../img/compositions/compositions-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.event-design-bg {
+  background-image: url(../../img/event-design/event-design-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.wrap-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 51.8%;
+  height: 1080px;
+  z-index: -10;
+  display: flex;
+  align-items: center;
+}
+
+.background-frame {
+  position: absolute;
+  left: 30px;
+  max-width: 996px;
+  width: 100%;
+  height: 1021px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/*
+==============================================================*/
+
+/*
+==============================================================*/
+@media (max-width: 1440px) {
+    .wrap-background {
+        width: 44%;
+    }
+
+    .background-frame {
+      height: 1044px;
+    }
+}
+
+/*
+==============================================================*/
+@media (max-width: 1024px) {
+  .header-top-mobile {
+    margin-bottom: 35px;
+  }
+
+  .wrap-background {
+    position: static;
+    width: 100%;
+    height: 518px;
+    margin-bottom: 30px;
+  }
+
+  .background-frame {
+    display: none;
+  }
+}
+
+/*
+==============================================================*/
+@media (max-width: 767px) {
+
+  .header-top-mobile {
+    margin-bottom: 19px;
+  }
+
+  .wrap-backgraund {
+    height: 443px;
+  }
+}

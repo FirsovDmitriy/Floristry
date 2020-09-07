@@ -1,0 +1,27 @@
+.instagram {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instagram__wrap {
+  display: flex;
+}
+
+.instagram__text {
+  margin-right: 29px;
+  align-self: center;
+}
+
+/* Adaptive design
+================================================================================================*/
+
+/*Tablet
+================================================================================================*/
+@media (max-width: 1024px) {
+  
+  .instagram {
+    display: none;
+  }
+
+}
+
